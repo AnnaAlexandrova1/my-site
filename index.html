@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Анна Александрова — Frontend-разработчик">
+    <title>Мой крутой сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="bg-light text-dark">
+    <header
+        class="relative overflow-hidden min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-400 to-violet-500">
+        <div class="absolute inset-0 opacity-10"></div>
+        <div class="container mx-auto px-6 z-10 text-center animate-fade-in" style="animation-play-state: running;">
+            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6">Анна Александрова</h1>
+            <p class="text-xl md:text-2xl text-white opacity-90 mb-10 max-w-2xl mx-auto">Frontend-разработчик</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#portfolio"
+                    class="px-8 py-3 bg-white text-primary font-medium rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-lg">Портфолио</a>
+                <a href="contact"
+                    class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-primary transition duration-300 transform hover:scale-105">Контакты</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="about" class="text-white">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <nav class="sticky top-0 z-50 bg-white shadow-sm transition-all duration-300">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">Анна.А.</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-dark hover:text-primary">Обо мне</a>
+                    <a href="#portfolio" class="nav-link text-dark hover:text-primary">Портфолио</a>
+                    <a href="#skills" class="nav-link text-dark hover:text-primary">Навыки</a>
+                    <a href="#contact" class="nav-link text-dark hover:text-primary">Контакты</a>
+                </div>
+            </div>
+        </nav>
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12"></div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Немного обо мне</h2>
+                        <p class="text-lg text-gray-600 mb-6">Привет! Я Frontend-разработчик с опытом более 3 лет.</p>
+                        <p class="text-lg text-gray-600 mb-8">За время своей работы я занималась разработкой MES-системы
+                            для горнодобывающей компании, web-приложений, гибридных мобильных приложений в сегменте
+                            HoReCa </p>
+                        <p class="text-lg text-gray-600 mb-8">Постоянно расширяю кругозор в сфере frontend-разработки,
+                            люблю знакомиться с новыми технологиями, обучаться.</p>
+
+                        <p class="text-lg text-gray-600 mb-8">Буду рада обсудить ваш проект и поработать с вами. На
+                            текущий момент основной фреймворк — Angular, но также я готова рассмотреть предложения с
+                            другим
+                            стеком/фреймворком.</p>
+
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Образование</h3>
+                                <p class="text-gray-600">РХТУ им. Менделеева, факультет логистики и экономической
+                                    информатики
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="inline-block mt-8 px-6 py-3 bg-primary text-white rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105">Скачать
+                            резюме</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-gray-50"></section>
+        <section id="portfolio" class="py-20 bg-white"></section>
+        <section id="contact" class="py-20 bg-primary text-white"></section>
+    </main>
+
+    <footer class="bg-neutral-950 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">Анна.А.</a>
+                    <p class="mt-2 text-gray-400">Frontend-разработчик</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center space-x-6">
+                    <a href="#about" class="text-gray-400 hover:text-white transition duration-300">Обо мне</a>
+                    <a href="#portfolio" class="text-gray-400 hover:text-white transition duration-300">Портфолио</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition duration-300">Навыки</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Контакты</a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Анна Александрова. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
