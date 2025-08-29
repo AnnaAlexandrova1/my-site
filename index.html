@@ -7,47 +7,71 @@
     <meta name="description" content="Анна Александрова — Frontend-разработчик">
     <title>Мой крутой сайт</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="index.js"></script>
 </head>
 
 <body class="bg-light text-dark">
     <header
-        class="relative overflow-hidden min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-400 to-violet-500">
-        <div class="absolute inset-0 opacity-10"></div>
+        class="relative overflow-hidden min-h-screen flex items-start pt-48 justify-center bg-gradient-to-br from-cyan-500 to-zinc-950">
+        <div class="absolute inset-0 opacity-10">
+            <div class="react absolute top-20 left-20 w-32 h-32 rounded-full bg-white floating-shape"></div>
+            <div class="react absolute top-1/3 right-40 w-40 h-40 rounded-lg bg-white floating-shape"></div>
+            <div class="react absolute bottom-20 left-40 w-24 h-24 rotate-45 bg-white floating-shape"></div>
+        </div>
+
         <div class="container mx-auto px-6 z-10 text-center animate-fade-in" style="animation-play-state: running;">
             <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6">Анна Александрова</h1>
             <p class="text-xl md:text-2xl text-white opacity-90 mb-10 max-w-2xl mx-auto">Frontend-разработчик</p>
             <div class="flex justify-center space-x-4">
                 <a href="#portfolio"
-                    class="px-8 py-3 bg-white text-primary font-medium rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-lg">Портфолио</a>
-                <a href="contact"
-                    class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-primary transition duration-300 transform hover:scale-105">Контакты</a>
+                    class="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-lg">Портфолио</a>
+                <a href="#contact"
+                    class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-black transition duration-300 transform hover:scale-105">Контакты</a>
             </div>
+            <div class="mt-[60px]">
+            <div id="cat" class="cat text-start  text-white">
+                <p>             _______________</p>
+                <p>  /\_/\     |               |</p>
+                <p> ( o.o )    | <span id="typed-out" class="typed-out text-yellow-500"></span> |</p>
+                <p>  > ^ <     |_______________|</p>
+                <p> /     \ /</p> 
+                <p>|       |</p>
+                <p> \_____/</p>
+                <p>  |   |</p>
+    </div>
+    </div>
         </div>
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="about" class="text-white">
+            <a href="#about" class="text-white">
                 <i class="fas fa-chevron-down text-2xl"></i>
             </a>
         </div>
     </header>
     <main>
         <nav class="sticky top-0 z-50 bg-white shadow-sm transition-all duration-300">
-            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-primary">Анна.А.</a>
+            <div class="container mx-auto px-6 py-4 flex justify-between items-cebter">
+                <a href="#" class="text-2xl font-bold text-sky-700">Анна.А.</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link text-dark hover:text-primary">Обо мне</a>
-                    <a href="#portfolio" class="nav-link text-dark hover:text-primary">Портфолио</a>
-                    <a href="#skills" class="nav-link text-dark hover:text-primary">Навыки</a>
-                    <a href="#contact" class="nav-link text-dark hover:text-primary">Контакты</a>
+                    <a href="#about" class="nav-link text-dark hover:text-sky-700 hover:underline">Обо мне</a>
+                    <a href="#portfolio" class="nav-link text-dark hover:text-sky-700 hover:underline">Портфолио</a>
+                    <a href="#skills" class="nav-link text-dark hover:text-sky-700 hover:underline">Навыки</a>
+                    <a href="#contact" class="nav-link text-dark hover:text-sky-700 hover:underline">Контакты</a>
                 </div>
             </div>
         </nav>
         <section id="about" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12"></div>
-                    <div class="md:w-1/2">
+                    <div class="md:w-1/3 mb-12 md:mb-0 md:pr-12 flex justify-center">
+                        <div class="relative rounded-xl overflow-hidden shadow-xl w-[320px] h-[400px]">
+                            <img src="assets/images/my-photo.jpg" alt="Анна Александрова" class="w-full h-auto">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+                        </div>
+                    </div>
+
+                    <div class="md:w-2/3">
                         <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Немного обо мне</h2>
                         <p class="text-lg text-gray-600 mb-6">Привет! Я Frontend-разработчик с опытом более 3 лет.</p>
                         <p class="text-lg text-gray-600 mb-8">За время своей работы я занималась разработкой MES-системы
@@ -69,16 +93,212 @@
                             </div>
                         </div>
                         <a href="#"
-                            class="inline-block mt-8 px-6 py-3 bg-primary text-white rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105">Скачать
+                            class="inline-block mt-8 px-6 py-3 bg-sky-500 text-white rounded-full hover:bg-opacity-90 transition duration-300 transform hover:scale-105">Скачать
                             резюме</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="py-20 bg-gray-50"></section>
-        <section id="portfolio" class="py-20 bg-white"></section>
-        <section id="contact" class="py-20 bg-primary text-white"></section>
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Мои навыки</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Инструменты и технологии,
+                        которые я
+                        использую в работе</p>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6 grid grid-flow-col grid-rows-4 gap-4">
+                <div class="flex flex-row">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p class="ml-2">JavaScript</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <p class="ml-2">TypeScript</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-html5-plain colored"></i>
+                    <p class="ml-2">HTML</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-css3-plain colored"></i>
+                    <p class="ml-2">CSS</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-sass-original colored"></i>
+                    <p class="ml-2">SCSS</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-angular-plain"></i>
+                    <p class="ml-2">Angular</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-github-original colored"></i>
+                    <p class="ml-2">Git</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-rxjs-plain colored"></i>
+                    <p class="ml-2">RxJs</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-graphql-plain colored"></i>
+                    <p class="ml-2">GraphQL</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-docker-plain colored"></i>
+                    <p class="ml-2">Docker</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <p class="ml-2">NodeJS</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-npm-original-wordmark colored"></i>
+                    <p class="ml-2">npm</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <p class="ml-2">tailwindcss</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-ionic-original colored"></i>
+                    <p class="ml-2">Ionic</p>
+                </div>
+
+                <div class="flex flex-row">
+                    <i class="devicon-primeng-plain colored"></i>
+                    <p class="ml-2">PrimeNg</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 __web-inspector-hide-shortcut__">Мои
+                        работы</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Проекты, выполненные в рамках основной работы я не могу выкладывать в общий доступ. Тут можно
+                        посмотреть мои pet-проекты.
+                    </p>
+
+                    <div class="mt-10 grid grid-cols-2 gap-4">
+                        <div class="mb-12 md:mb-0 flex justify-center">
+                            <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                                <div class="h-[480px]"> <img src="assets/images/prewApp.png"
+                                        alt="Гибридное мобильное приложение" class="w-full h-auto">
+                                </div>
+
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1">Каталог Пива</h3>
+                                    <p class="text-lg">Гибридное мобильное приложение </p>
+                                    <p class="text-gray-600">Инструменты: Angular, Ionic, Capasitor</p>
+                                    <div class="mt-6 mb-6">
+                                        <a href="https://github.com/AnnaAlexandrova1/ionic-spa-angular?tab=readme-ov-file"
+                                            class="hover:bg-opacity-70 transition duration-300 transform hover:scale-110">
+                                            <i class="devicon-github-original mr-2 text-2xl"></i> 
+                                            <span class="hover:underline">Посмотреть GitHub ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-12 md:mb-0 flex justify-center">
+                            <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                                <div class="h-[480px]">
+                                    <img src="assets/images/notes.png" alt="web-страница" class="w-full h-auto">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-bold text-lg mb-1">Заметки с тегами и напоминаниями</h3>
+                                    <p class="text-lg">web-приложение </p>
+                                    <p class="text-gray-600">Инструменты: Angular, RxJS, PrimeNg, TypeScript</p>
+                                    <div class="mt-6 mb-6">
+                                        <a href="https://github.com/AnnaAlexandrova1/Notes"
+                                            class="hover:bg-opacity-70 transition duration-300 transform hover:scale-105">
+                                            <i class="devicon-github-original mr-2 text-2xl"></i> 
+                                            <span class="hover:underline">Посмотреть GitHub ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-cyan-500 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Свяжитесь со мной</h2>
+                    <p class="text-lg opacity-90 max-w-2xl mx-auto">Готовы обсудить ваш проект или просто поздороваться?
+                        Напишите мне!</p>
+                </div>
+
+
+                <div class="flex flex-row justify-around">
+                    <div>
+                        <a href="tel:+79264776497"
+                            class="flex items-center hover:opacity-80 transition duration-300 __web-inspector-hide-shortcut__">
+                            <div
+                                class="w-14 h-14 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4">
+                                <i class="fa fa-phone text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Телефон</h3>
+                                <p class="opacity-80">+7 (926) 477-64-97</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://t.me/any7487"
+                            class="flex items-center hover:opacity-80 transition duration-300">
+                            <div
+                                class="w-14 h-14 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4">
+                                <i class="fab fa-telegram text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Telegram</h3>
+                                <p class="opacity-80">@any7487</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="mailto:anna4776497@gmail.com"
+                            class="flex items-center hover:opacity-80 transition duration-300">
+                            <div
+                                class="w-14 h-14 rounded-full bg-white bg-opacity-20 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Email</h3>
+                                <p class="opacity-80">anna4776497@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-neutral-950 text-white py-10">
@@ -102,6 +322,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

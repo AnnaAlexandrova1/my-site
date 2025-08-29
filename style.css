@@ -1,9 +1,66 @@
-@import "tailwindcss";
-
-@theme {
-  --primary: #3ab7bf;
+.cat {
+  font-family: 'Courier New', monospace;
+  white-space: pre;
+  font-size: 18px;
+  line-height: 0.4;
+  color: #333;
+  /* margin: 15px 0; */
+  text-align: left;
+  display: inline-block;
+  /*position: relative;
+  left: -1500px; */
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
-:root {
-  --color-primary: #3ab7bf;
+@keyframes slidein {
+  from {
+    margin-left: -2000px;
+  }
+
+  to {
+    margin-left: 0;
+  }
 }
+
+.react {
+  animation-duration: 3s;
+  animation-name: react;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes react {
+  from {
+    opacity: 0
+  }
+
+  to {
+     opacity: 0.7; 
+  }
+}
+
+
+.cat:hover {
+  transform: scale(1.05);
+}
+
+.cursor-blink {
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+
